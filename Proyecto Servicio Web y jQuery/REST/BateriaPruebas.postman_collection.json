@@ -1,0 +1,1454 @@
+{
+	"info": {
+		"_postman_id": "66a53f31-c326-4951-b56f-d8cc090ea584",
+		"name": "BateriaPruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Añadir Reserva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Carlos\",\r\n    \"Apellidos\": \"Beltrán Romero\",\r\n    \"Fecha Nacimiento\": \"10-10-1998\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"12345678A\",\r\n    \"Telefono\": \"123456789\",\r\n    \"Instalacion\": \"Piscina\",\r\n    \"Numero personas\": 2,\r\n    \"Fecha Reserva\": \"10-06-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 18:04:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				},
+				{
+					"name": "Éxito 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"César\",\r\n    \"Apellidos\": \"Cerrolaza Salas\",\r\n    \"Fecha Nacimiento\": \"05-06-2000\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"54294861A\",\r\n    \"Telefono\": \"987654321\",\r\n    \"Instalacion\": \"Pista de Padel\",\r\n    \"Numero personas\": 5,\r\n    \"Fecha Reserva\": \"11-05-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 18:09:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Obtener Reservas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "556"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22c-Z9ncUiMoFZ9sBwfqdqrOlqoFbpY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:05:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"642f09a680b82ef92f570445\",\n        \"Nombre\": \"Carlos\",\n        \"Apellidos\": \"Beltrán Romero\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"12345678A\",\n        \"Telefono\": \"123456789\",\n        \"Instalacion\": \"Piscina\",\n        \"Numero personas\": 2,\n        \"Fecha Reserva\": \"10-06-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    },\n    {\n        \"_id\": \"642f0af080b82ef92f570446\",\n        \"Nombre\": \"César\",\n        \"Apellidos\": \"Cerrolaza Salas\",\n        \"Fecha Nacimiento\": \"05-06-2000\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"54294861A\",\n        \"Telefono\": \"987654321\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 5,\n        \"Fecha Reserva\": \"11-05-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Eliminar Reservas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-IhAoE8Fx3+5FprocJCyzCJayOaw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:16:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas eliminadas!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Añadir Reserva 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Carlos\",\r\n    \"Apellidos\": \"Beltrán Romero\",\r\n    \"Fecha Nacimiento\": \"10-10-1998\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"12345678A\",\r\n    \"Telefono\": \"123456789\",\r\n    \"Instalacion\": \"Piscina\",\r\n    \"Numero personas\": 2,\r\n    \"Fecha Reserva\": \"10-06-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"César\",\r\n    \"Apellidos\": \"Cerrolaza Salas\",\r\n    \"Fecha Nacimiento\": \"05-06-2000\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"54294861A\",\r\n    \"Telefono\": \"987654321\",\r\n    \"Instalacion\": \"Pista de Padel\",\r\n    \"Numero personas\": 5,\r\n    \"Fecha Reserva\": \"11-05-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:21:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				},
+				{
+					"name": "Éxito2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"María\",\r\n    \"Apellidos\": \"Lista Vela\",\r\n    \"Fecha Nacimiento\": \"14-04-2001\",\r\n    \"Sexo\": \"Mujer\",\r\n    \"DNI\": \"67589320A\",\r\n    \"Telefono\": \"234567890\",\r\n    \"Instalacion\": \"Pista de Fútbol\",\r\n    \"Numero personas\": 20,\r\n    \"Fecha Reserva\": \"17-05-2023\",\r\n    \"Hora Reserva\": \"17:00-17:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:27:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				},
+				{
+					"name": "Éxito3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Javier\",\r\n    \"Apellidos\": \"García García\",\r\n    \"Fecha Nacimiento\": \"10-10-1998\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"44627255A\",\r\n    \"Telefono\": \"453627189\",\r\n    \"Instalacion\": \"Pista de Padel\",\r\n    \"Numero personas\": 2,\r\n    \"Fecha Reserva\": \"10-06-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:29:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				},
+				{
+					"name": "Éxito4",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Javier\",\r\n    \"Apellidos\": \"García García\",\r\n    \"Fecha Nacimiento\": \"10-10-1998\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"44627255A\",\r\n    \"Telefono\": \"453627189\",\r\n    \"Instalacion\": \"Pista de Tenis\",\r\n    \"Numero personas\": 4,\r\n    \"Fecha Reserva\": \"16-06-2023\",\r\n    \"Hora Reserva\": \"16:00-16:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:29:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				},
+				{
+					"name": "Éxito5",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Carlos\",\r\n    \"Apellidos\": \"Beltrán Romero\",\r\n    \"Fecha Nacimiento\": \"10-10-1998\",\r\n    \"Sexo\": \"Hombre\",\r\n    \"DNI\": \"12345678A\",\r\n    \"Telefono\": \"123456789\",\r\n    \"Instalacion\": \"Piscina\",\r\n    \"Numero personas\": 2,\r\n    \"Fecha Reserva\": \"10-06-2023\",\r\n    \"Hora Reserva\": \"10:00-10:55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-9VaI/ututYLeOeWPLjDhtNgbm5g\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:30:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reservas creadas!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Obtener Reservas 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1396"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"574-UUZBGlJ92zOLOjlI1Dlz+hS4WO4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:36:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"642fee921f2a7c0f40ab2f49\",\n        \"Nombre\": \"César\",\n        \"Apellidos\": \"Cerrolaza Salas\",\n        \"Fecha Nacimiento\": \"05-06-2000\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"54294861A\",\n        \"Telefono\": \"987654321\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 5,\n        \"Fecha Reserva\": \"11-05-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    },\n    {\n        \"_id\": \"642ff0281f2a7c0f40ab2f4a\",\n        \"Nombre\": \"María\",\n        \"Apellidos\": \"Lista Vela\",\n        \"Fecha Nacimiento\": \"14-04-2001\",\n        \"Sexo\": \"Mujer\",\n        \"DNI\": \"67589320A\",\n        \"Telefono\": \"234567890\",\n        \"Instalacion\": \"Pista de Fútbol\",\n        \"Numero personas\": 20,\n        \"Fecha Reserva\": \"17-05-2023\",\n        \"Hora Reserva\": \"17:00-17:55\"\n    },\n    {\n        \"_id\": \"642ff0721f2a7c0f40ab2f4b\",\n        \"Nombre\": \"Javier\",\n        \"Apellidos\": \"García García\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"44627255A\",\n        \"Telefono\": \"453627189\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 2,\n        \"Fecha Reserva\": \"10-06-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    },\n    {\n        \"_id\": \"642ff0911f2a7c0f40ab2f4c\",\n        \"Nombre\": \"Javier\",\n        \"Apellidos\": \"García García\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"44627255A\",\n        \"Telefono\": \"453627189\",\n        \"Instalacion\": \"Pista de Tenis\",\n        \"Numero personas\": 4,\n        \"Fecha Reserva\": \"16-06-2023\",\n        \"Hora Reserva\": \"16:00-16:55\"\n    },\n    {\n        \"_id\": \"642ff0c01f2a7c0f40ab2f4d\",\n        \"Nombre\": \"Carlos\",\n        \"Apellidos\": \"Beltrán Romero\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"12345678A\",\n        \"Telefono\": \"123456789\",\n        \"Instalacion\": \"Piscina\",\n        \"Numero personas\": 2,\n        \"Fecha Reserva\": \"10-06-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Obtener Reserva por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/64551346ggg3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						"64551346ggg3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/642ff0281f2a7c0f40ab2f4a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642ff0281f2a7c0f40ab2f4a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "279"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"117-lZqPZJc2i/kxdwQ+EQFOPLfPgy8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:46:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"642ff0281f2a7c0f40ab2f4a\",\n        \"Nombre\": \"María\",\n        \"Apellidos\": \"Lista Vela\",\n        \"Fecha Nacimiento\": \"14-04-2001\",\n        \"Sexo\": \"Mujer\",\n        \"DNI\": \"67589320A\",\n        \"Telefono\": \"234567890\",\n        \"Instalacion\": \"Pista de Fútbol\",\n        \"Numero personas\": 20,\n        \"Fecha Reserva\": \"17-05-2023\",\n        \"Hora Reserva\": \"17:00-17:55\"\n    }\n]"
+				},
+				{
+					"name": "Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/64551346ggg3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"64551346ggg3"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-hqx/dImPEAi29QlZw03E51K5pHE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 10:48:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"reservas null\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Eliminar Reserva por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/745ll0911f2a7c0f40ab2f4h",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						"745ll0911f2a7c0f40ab2f4h"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/642ff0911f2a7c0f40ab2f4c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642ff0911f2a7c0f40ab2f4c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-Nna8Y1vt33+E8HbFB9/Qx1B0xoQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:03:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reserva eliminada!\"\n}"
+				},
+				{
+					"name": "Error",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/745ll0911f2a7c0f40ab2f4h",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"745ll0911f2a7c0f40ab2f4h"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1675"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:07:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Error</title>\n    </head>\n    <body>\n        <pre>BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\n            <br> &nbsp; &nbsp;at new BSONTypeError (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\bson\\lib\\error.js:41:28)\n            <br> &nbsp; &nbsp;at new ObjectId (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\bson\\lib\\objectid.js:67:23)\n            <br> &nbsp; &nbsp;at ObjectId (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\bson\\lib\\objectid.js:26:20)\n            <br> &nbsp; &nbsp;at Reservas.remove (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\routes\\reservas-service.js:50:31)\n            <br> &nbsp; &nbsp;at C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\routes\\reservas.js:141:21\n            <br> &nbsp; &nbsp;at Layer.handle [as handle_request] (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\express\\lib\\router\\layer.js:95:5)\n            <br> &nbsp; &nbsp;at next (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\express\\lib\\router\\route.js:144:13)\n            <br> &nbsp; &nbsp;at Route.dispatch (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\express\\lib\\router\\route.js:114:3)\n            <br> &nbsp; &nbsp;at Layer.handle [as handle_request] (C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\express\\lib\\router\\layer.js:95:5)\n            <br> &nbsp; &nbsp;at C:\\Users\\Lenovo\\Desktop\\sitioweb_CarlosBeltran_CesarCerrolaza\\REST\\node_modules\\express\\lib\\router\\index.js:284:15\n        </pre>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "Obtener Reservas 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/642ff0911f2a7c0f40ab2f4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						"642ff0911f2a7c0f40ab2f4c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1115"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45b-NhCSolEW2zCRgHa1QL8z30I3CF8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:08:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"642fee921f2a7c0f40ab2f49\",\n        \"Nombre\": \"César\",\n        \"Apellidos\": \"Cerrolaza Salas\",\n        \"Fecha Nacimiento\": \"05-06-2000\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"54294861A\",\n        \"Telefono\": \"987654321\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 5,\n        \"Fecha Reserva\": \"11-05-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    },\n    {\n        \"_id\": \"642ff0281f2a7c0f40ab2f4a\",\n        \"Nombre\": \"María\",\n        \"Apellidos\": \"Lista Vela\",\n        \"Fecha Nacimiento\": \"14-04-2001\",\n        \"Sexo\": \"Mujer\",\n        \"DNI\": \"67589320A\",\n        \"Telefono\": \"234567890\",\n        \"Instalacion\": \"Pista de Fútbol\",\n        \"Numero personas\": 20,\n        \"Fecha Reserva\": \"17-05-2023\",\n        \"Hora Reserva\": \"17:00-17:55\"\n    },\n    {\n        \"_id\": \"642ff0721f2a7c0f40ab2f4b\",\n        \"Nombre\": \"Javier\",\n        \"Apellidos\": \"García García\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"44627255A\",\n        \"Telefono\": \"453627189\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 2,\n        \"Fecha Reserva\": \"10-06-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    },\n    {\n        \"_id\": \"642ff0c01f2a7c0f40ab2f4d\",\n        \"Nombre\": \"Carlos\",\n        \"Apellidos\": \"Beltrán Romero\",\n        \"Fecha Nacimiento\": \"10-10-1998\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"12345678A\",\n        \"Telefono\": \"123456789\",\n        \"Instalacion\": \"Piscina\",\n        \"Numero personas\": 2,\n        \"Fecha Reserva\": \"10-06-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    }\n]"
+				},
+				{
+					"name": "Error: Reserva Eliminada",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/642ff0911f2a7c0f40ab2f4c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642ff0911f2a7c0f40ab2f4c"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-hqx/dImPEAi29QlZw03E51K5pHE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:08:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"reservas null\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Modificar Reserva",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Fecha Nacimiento\": \"03-11-2001\",\r\n    \"Numero personas\": 4,\r\n    \"Fecha Reserva\": \"13-05-2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservas/642fee921f2a7c0f40ab2f49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						"642fee921f2a7c0f40ab2f49"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Fecha Nacimiento\": \"03-11-2001\",\r\n    \"Numero personas\": 4,\r\n    \"Fecha Reserva\": \"13-05-2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/642fee921f2a7c0f40ab2f49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642fee921f2a7c0f40ab2f49"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-UOAchblCJgresEdJL8ECcqCActU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:21:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Reserva actualizada!\"\n}"
+				},
+				{
+					"name": "Error: no se ejecutan modificaciones",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Fecha Nacimiento\": \"03-11-2001\",\r\n    \"Numero personas\": 4,\r\n    \"Fecha Reserva\": \"13-05-2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservas/642fee921f2a7c0f40ab2f49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642fee921f2a7c0f40ab2f49"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-BnTv5jW3bpKQREq5KvFbWN9qopE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:23:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"no actualizada\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Ver Modificación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservas/642fee921f2a7c0f40ab2f49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservas",
+						"642fee921f2a7c0f40ab2f49"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Éxito",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservas/642fee921f2a7c0f40ab2f49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservas",
+								"642fee921f2a7c0f40ab2f49"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "282"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11a-R6nZmTIWdy0oFW7gxx88Ioo0EyY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 11:24:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"642fee921f2a7c0f40ab2f49\",\n        \"Nombre\": \"César\",\n        \"Apellidos\": \"Cerrolaza Salas\",\n        \"Fecha Nacimiento\": \"03-11-2001\",\n        \"Sexo\": \"Hombre\",\n        \"DNI\": \"54294861A\",\n        \"Telefono\": \"987654321\",\n        \"Instalacion\": \"Pista de Padel\",\n        \"Numero personas\": 4,\n        \"Fecha Reserva\": \"13-05-2023\",\n        \"Hora Reserva\": \"10:00-10:55\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

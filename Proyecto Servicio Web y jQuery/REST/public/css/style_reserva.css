@@ -1,0 +1,432 @@
+:root{
+    --principal: #09A6FF;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+
+}
+html{
+    font-size: 62.5%;
+    box-sizing:border-box;
+    
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;/* 1=rem=10px*/
+}
+.Boton_Secundario {
+    background-color: var(--principal);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+   
+
+
+
+}
+/*              FUENTES            */
+a,
+p,
+header,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+
+
+/*                HEADER            */
+
+header{
+    background-color: var(--principal);
+    width: 100%;
+    padding: 0.5rem ;
+
+}
+
+
+
+header span{
+    float: right;
+    
+}
+@media(max-width:542px ){
+    header span{
+        display: none;
+    }
+    
+ }
+ /*                NAVEGACION              */
+
+.navegacion{
+    /* Centrar el contenido del nav*/
+    margin: 0 auto  0 auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-around ;
+    align-items: center;
+    width: 100%;
+
+}
+@media(max-width: 920px){
+    .navegacion{
+    flex-direction: column;
+    
+    
+    }
+    
+ }
+
+
+
+.nav-div{
+    background-color: var(--blanco);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+
+    
+}
+.navegacion a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+.logo{
+
+    position: absolute;
+    left: 0;
+    padding-top: 1.5rem;
+    
+}
+.navegacion a:hover{
+    color: lightslategray;
+    /*lightslategray*/
+
+}
+
+/*              MAIN            */
+
+main{
+    
+    display: flex;
+    min-height: 100vh; /* altura mínima del viewport */
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/fondoBorroso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* ajusta la imagen de fondo para cubrir todo el ancho y alto del elemento */
+
+}
+
+.cuadro_principal{
+    display: flex;
+    min-height: 60vh;
+}
+
+.caja{
+    position: relative;
+    margin-left: 15rem;
+    margin-top:10rem;
+    margin-right: 15rem;
+    margin-bottom: 10rem;
+    width:  40%;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+  
+}
+
+.side_table {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    float: left;
+    width: 25%;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid rgb(203, 203, 203);
+  }
+  
+  .side_table div {
+    border-bottom: 1px solid rgb(203, 203, 203);
+    padding: 0.5rem;
+  }
+
+  .side_table h3 {
+    padding: 0.5rem;
+  }
+
+.formulario{
+    float: right;
+    width: 80%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-bottom: 10rem;
+}
+
+.caja header{
+    background-color: var(--principal);
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.formularios{
+    font-size: larger;
+    padding-top: 2rem;
+    width: 100%;
+    max-width: 10rem;
+    text-align: left;
+}
+
+.paso_1{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.paso_2{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+
+
+.paso_3{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.pay-button {
+    background-color: #0070ba;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.paso_3 svg{
+    width: 20%;
+    height: 20%;
+}
+
+.input_socios{
+    width: 32rem; /* Ajusta el valor según el ancho deseado */
+    padding: 3px; /* Ajusta el valor según el espacio deseado */
+    border: 1px solid black; /* Ajusta el valor según el grosor y el color deseado */
+    border-radius: 3px; /* Ajusta el valor según la curvatura deseada */
+    color: black; /* Ajusta el valor según el color deseado */
+}
+
+.hazte_socio_bttn{
+    display: inline-block; /* El botón se muestra en línea con el texto */
+    padding: 4px; /* Ajusta el valor según el espacio deseado */
+    background-color: var(--principal); /* Ajusta el valor según el color deseado */
+    color: white; /* Ajusta el valor según el color deseado */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Ajusta el valor según la curvatura deseada */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra al botón */
+    margin-top: 3px;
+}
+
+.input_socios::placeholder {
+    color: red; /* Ajusta el valor según el color deseado */
+}
+
+.tipos_abono{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.sexo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 23%;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.terminos p{
+    color: gray;
+}
+
+.terminos p strong {
+    color: black;
+    
+}
+
+.fila_paso_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.fila_paso_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.boton_horas{
+    color: #000000;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    width: 15rem;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid lightgray; /* Agrega un borde gris al botón */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton_horas:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+  
+.boton_horas.clicked {
+    background-color: var(--principal); /* color de fondo después de hacer clic */
+}
+
+
+
+
+.caja footer{
+    position: relative;
+    clear: both;
+    background-color: var(--principal);
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-radius: 6px;
+}
+
+
+.form_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 5%;
+    padding-top: 1rem;
+}
+@media(max-width:1180px ){
+    .caja{
+        margin-top:10rem;
+        margin-bottom: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        
+        width: 80%; 
+    }
+    .fila_paso_2{
+        flex-direction: column;
+    }
+    .fila_paso_1{
+        flex-direction: column;
+    }
+    
+    
+    
+ }
+ @media(max-width:580px ){
+    .input_socios{
+        width: auto;
+        height: auto;
+    }
+     
+  }
+
+
+
+
+
+
+
+
+/*            FOOTER            */
+
+
+.div-footer{
+    background-color: var(--principal);
+    padding: 4rem;
+    position: relative;
+}
+.h3footer{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 1rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    width: 90%;
+}
+
+.nav-footer{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.nav-footer a, .nav-footer p{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.h3footer h3 span{
+  float: right;
+  margin-right: 2rem;
+
+}
+@media(max-width:836px ){
+    .nav-footer{
+        flex-direction: column;
+        padding-top: 5rem;
+
+    }
+
+    
+ }
+

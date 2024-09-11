@@ -1,0 +1,23 @@
+{
+  "name": "fitnation",
+  "version": "1.0.0",
+  "description": "API con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fitnation"
+  ],
+  "author": "Cesar Cerrolaza y Carlos Beltran",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^4.14.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva | FitNation</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <!-- FUENTE BEBAS NEUE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krub:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!--FUENTE MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
+ 
+    <!-- CONECTAR CON CSS HOJA DE ESTILOS HAZTE_SOCIO-->
+    <link rel="preload" href="css/" as="style">
+    <link rel="stylesheet" href="css/style_reserva.css">
+
+    <!-- SCRIPTS -->
+
+
+
+
+</head>
+
+<body>
+
+    <!--                 HEADER              -->
+
+    <header>C/Sagasta nº07, La Linea de la Concepcion, Cádiz <span> <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-phone" width="16" height="16" viewBox="0 0 24 24" stroke-width="2"
+                stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>956 53 92 83</span> </header>
+
+    <!--                 NAV PRINCIPAL                  -->
+
+    <div class="nav-div">
+        <nav class="navegacion">
+            <a href="index.html" class="logo"><img src="Images/logo.png" alt="Imagen del logo"></a>
+
+
+            <a href="hazte_socio.html">Únete</a>
+            <a href="salas.html">Instalaciones</a>
+            <a href="reserva.html">Reserva</a>
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+
+
+        </nav>
+    </div>
+
+
+    <main>
+
+        <div class="caja" id = form1 style="display: block;">
+            <header>Reserva de Instalaciones</header>
+            <div class=cuadro_principal>
+
+                <div class=side_table>
+                    <div style="background-color: lightgray;">
+                        <h3>
+                            Datos Personales
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            Eleccion de Instalacion
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            Disponibilidad
+                        </h3>
+                    </div>
+                </div>
+                
+                <div class=formulario>
+
+                    <form action="#" id="formulario">
+                
+                        <div class=paso_1>
+
+                           
+                            <div class = fila_paso_1>
+                                <div>
+                                    <label for="nombre">Nombre</label>
+                                    <br>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div>
+                                    <label for="apellidos">Apellidos</label>
+                                    <br>
+                                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <br>
+                            <div class = fila_paso_1>
+                                <div>
+                                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                    <br>
+                                    <input type="date" name="fechaNacimiento" id="fechaNacimiento"
+                                        >
+                                </div>
+                                <div class = sexo>
+                                    <div>
+                                        <input id="hombre" type="radio" name="sexo" value="Hombre">
+                                        <label for="hombre">Hombre</label>
+
+                                    </div>
+                                    <div>
+                                        <input id="mujer" type="radio" name="sexo" value="Mujer">
+                                        <label for="mujer">Mujer</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class = fila_paso_1>
+                                <div>
+                                    <label for="dni">DNI</label>
+                                    <br>
+                                    <input type="text" name="dni" id="dni" placeholder="DNI">
+                                </div>
+                                <div>
+                                    <label for="telefono">Teléfono</label>
+                                    <br>
+                                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <nav id = page_controll class=form_buttons>
+                    <button class="Boton_Secundario" type="button">Anterior</button>
+                    <button id="btnSiguiente1" class="Boton_Secundario" type="button">Siguiente</button>
+                </nav>
+            </footer>
+        </div>
+
+
+        <div class="caja" id = form2 style="display: none;">
+            <header>Reserva de Instalaciones</header>
+            <div class=cuadro_principal>
+
+                <div class=side_table>
+                    <div>
+                        <h3>
+                            Datos Personales
+                        </h3>
+                    </div>
+                    <div style="background-color: lightgray;">
+                        <h3>
+                            Elección de Instalación
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            Disponibilidad
+                        </h3>
+                    </div>
+                </div>
+                
+                <div class=formulario>
+
+                    <form action="#">
+                
+                        <div class = paso_2>
+                            <div>
+
+                                <label for="instalacion">Instalación</label>
+                                <br>
+                                <select name="instalacion" id="instalacion">
+                                    <option value="Pista de Fútbol">Pista de Fútbol</option>
+                                    <option value="Pista de Tenis">Pista de Tenis</option>
+                                    <option value="Pista de Padel">Pista de Pádel</option>
+                                    <option value="Piscina">Piscina</option>
+                                </select>
+                                <br>
+                                <br>
+                                <label for="nPersonas">Personas que harán uso de la pista</label>
+                                <br>
+                                <input type="number" min = 1 name="nPersonas" id="nPersonas" placeholder="Número de Personas">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <nav  class=form_buttons>
+                    <button id="btnAnterior1" class="Boton_Secundario" type="button">Anterior</button>
+                    <button id="btnSiguiente2" class="Boton_Secundario" type="button">Siguiente</button>
+                </nav>
+            </footer>
+        </div>
+
+        <div class="caja" id = form3 style="display: none;">
+            <header>Reserva de Instalaciones</header>
+            <div class=cuadro_principal>
+
+                <div class=side_table>
+                    <div>
+                        <h3>
+                            Datos Personales
+                        </h3>
+                    </div>
+                    <div>
+                        <h3>
+                            Eleccion de Instalacion
+                        </h3>
+                    </div>
+                    <div style="background-color: lightgray;">
+                        <h3>
+                            Disponibilidad
+                        </h3>
+                    </div>
+                </div>
+
+                <div class=formulario>
+
+                    <form action="#">
+                        <div class = paso_3>
+                            <label for="fechaReserva">Fecha de la Reserva</label>
+                            <br>
+                            <input type="date" name="fechaReserva" id="fechaReserva"
+                                >
+
+                            <br>
+                            <br>
+                            <label>Hora de la Reserva</label>
+                            <br>
+                            <nav id = "horas" class = horas>
+                                <div class="fila_paso_3">
+                                    <button type="button" name = "hora" class="boton_horas" value="09:00-09:55">09:00-09:55</button>
+                                    <button type="button" name = "hora" class="boton_horas" value="10:00-10:55">10:00-10:55</button>
+                                </div>
+                                <div class="fila_paso_3">
+                                    <button type="button" name = "hora" class="boton_horas"value="11:00-11:55">11:00-11:55</button>
+                                    <button type="button" name = "hora" class="boton_horas" value="12:00-12:55">12:00-12:55</button>
+                                </div>
+                                <div class="fila_paso_3">
+                                    <button type="button" name = "hora" class="boton_horas" value="13:00-13:55">13:00-13:55</button>
+                                    <button type="button" name = "hora" class="boton_horas"value="14:00-14:55">14:00-14:55</button>
+                                </div>
+                                <div class="fila_paso_3">
+                                    <button type="button" name = "hora" class="boton_horas" value="15:00-15:55">15:00-15:55</button>
+                                    <button type="button" name = "hora" class="boton_horas"value="16:00-16:55">16:00-16:55</button>
+                                </div>
+                                <div class="fila_paso_3">
+                                    <button type="button" name = "hora" class="boton_horas"value="17:00-17:55">17:00-17:55</button>
+                                    <button type="button" name = "hora" class="boton_horas"value="18:00-18:55">18:00-18:55</button>
+                                </div>
+                                <div class="fila_paso_3">
+                                    <button type="button"  name = "hora" class="boton_horas" value="19:00-19:55">19:00-19:55</button>
+                                    <button type="button" name = "hora" class="boton_horas"value="20:00-20:55">20:00-20:55</button>
+                                </div>
+                            </nav>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <nav class=form_buttons>
+                    <button id="btnAnterior2" class="Boton_Secundario" type="button">Anterior</button>
+                    <button id="btnEnviar" onclick="postReserva()" class="Boton_Secundario" type="submit">Enviar</button>
+                </nav>
+            </footer>
+        </div>
+
+    </main>
+
+    <!--                  FOOTER               -->
+
+    <div class="div-footer">
+        <footer>
+            <div class=" h3footer">
+                <h3>FitNation <span> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></span></h3>
+            </div>
+
+            <nav class="nav-footer">
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a href="mailto:atencionFitNation@correo.com">Correo</a>
+                <a href="#"> Política de privacidad</a>
+                <p>Copyrigth<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright"
+                        width="12" height="12" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+                    </svg> 2023. Todos los derechos reservados</p>
+            </nav>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"> </script>
+    <script src="js/wsinvocations.js"></script>
+    <script src="js/validacion-formulario-reserva.js"></script>
+</body>
+</html>
